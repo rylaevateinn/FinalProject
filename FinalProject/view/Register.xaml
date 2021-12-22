@@ -1,0 +1,113 @@
+﻿<Window x:Class="FinalProject.view.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject.view"
+        mc:Ignorable="d"
+        Title="Register" Height="768" Width="1366">
+    <Grid Height="768 " Width="1366">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="451 "/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Background="White" HorizontalAlignment="Stretch">
+
+            <!--Nama-->
+            <Label Content="Email" 
+                   Margin="35,100,30,0" 
+                   Padding="0" 
+                   FontSize="18" 
+                   FontFamily="Arial Rounded MT Bold" 
+                   HorizontalAlignment="Left"/>
+
+            <!--TextBoxUsername-->
+            <TextBox MaxLength="16" x:Name="txtName" 
+                     Margin="0,10,0,0" FontSize="16.5" Padding="8,12,8,5 "
+                     Width="380" Height="45" />
+            
+            <!--Username-->
+            <Label Content="Username" 
+                   Margin="35,15,30,0" 
+                   Padding="0" 
+                   FontSize="18" 
+                   FontFamily="Arial Rounded MT Bold" 
+                   HorizontalAlignment="Left"/>
+
+            <!--TextBoxUsername-->
+            <TextBox MaxLength="30" x:Name="txtUsername" 
+                   Margin="0,10,0,0" FontSize="16.5" Padding="8,12,8,5" 
+                   Width="380" Height="45"/>
+
+            <!--No. Handphone-->
+            <Label Content="No. Handphone" 
+                   Margin="35,15,30,0" 
+                   FontSize="18" 
+                   FontFamily="Arial Rounded MT Bold" 
+                   HorizontalAlignment="Left"/>
+
+            <!--TextBoxNo.Handphone-->
+            <TextBox MaxLength="14" x:Name="txtNohandphone" 
+                     Margin="0,10,0,0" FontSize="16.5" Padding="8,12,8,5"
+                         Width="380" 
+                         Height="45"/>
+
+            <!--LabelPassword-->
+            <Label Content="Password" 
+                   Margin="35,15,30,0" 
+                   Padding="0" 
+                   FontSize="18" 
+                   FontFamily="Arial Rounded MT Bold" 
+                   HorizontalAlignment="Left"/>
+            
+            <!--TexBoxPassword-->
+            <PasswordBox MaxLength="16" x:Name="txtPassword" 
+                         Margin="0,10,0,0" Padding="8,12,8,5"
+                         Width="380" 
+                         Height="45"/>
+
+            <!--LabelConfirmPassword-->
+            <Label Content="Confirm Password" 
+                   Margin="35,15,30,0" 
+                   Padding="0" 
+                   FontSize="18" 
+                   FontFamily="Arial Rounded MT Bold" 
+                   HorizontalAlignment="Left"/>
+
+            <!--TexBoxConfirmPassword-->
+            <PasswordBox MaxLength="16" x:Name="txtConfirmPassword" 
+                         Margin="0,10,0,0" Padding="8,12,8,5"
+                         Width="380" 
+                         Height="45"/>
+
+            <!--Tombol Register-->
+            <Button x:Name="btnRegister" 
+                    Content="Register" 
+                    Margin="30,20,30,0" 
+                    Width="350" Height="45" 
+                    FontSize="24" 
+                    FontFamily="Arial Rounded MT Bold" 
+                    Foreground="White" 
+                    Background="Red">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="25"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Label Content="Sudah Memiliki Akun" 
+                   Margin="0,10,0,0" Padding="0"  
+                   FontSize="16" 
+                   Foreground="#3C45D5" 
+                   HorizontalContentAlignment="Center" 
+                   HorizontalAlignment="Center"/> 
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Background="#60A8F0">
+
+        </StackPanel>
+
+    </Grid>
+</Window>
