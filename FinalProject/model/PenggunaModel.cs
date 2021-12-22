@@ -39,5 +39,12 @@ namespace FinalProject.model
             }
             return result;
         }
+
+        //insert
+        public bool InsertPengguna()
+        {
+            string data = "'" + Email + "','" + username + "','" + telp + "','" + password + "'";
+            return temp.Insert("pengguna", data);
+        }
     }
 }

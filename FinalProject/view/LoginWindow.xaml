@@ -82,7 +82,7 @@
                    FontSize="16" 
                    Foreground="#3C45D5" 
                    HorizontalContentAlignment="Center" 
-                   HorizontalAlignment="Center"/> 
+                   HorizontalAlignment="Center" MouseDown="lblCreateAccount_MouseDown"/> 
 
         </StackPanel>
 

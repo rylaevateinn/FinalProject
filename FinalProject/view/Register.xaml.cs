@@ -17,9 +17,34 @@ namespace FinalProject.view
     /// </summary>
     public partial class Register : Window
     {
+        //deklarasi kontroller
+        controller.Pengguna pengguna;
+
         public Register()
         {
             InitializeComponent();
+            pengguna = new controller.Pengguna(this);
+        }
+
+        private void Label_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            LoginWindow login = new LoginWindow();
+            login.Show();
+            this.Close();
+
+        }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            if(txtPassword.Password != txtConfirmPassword.Password)
+            {
+                MessageBox.Show("password tidak sama");
+            }else
+            {
+                pengguna.Register();
+            }
+
+            
         }
     }
 }

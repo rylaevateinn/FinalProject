@@ -23,7 +23,7 @@
                    HorizontalAlignment="Left"/>
 
             <!--TextBoxUsername-->
-            <TextBox MaxLength="16" x:Name="txtName" 
+            <TextBox MaxLength="45" x:Name="txtName" 
                      Margin="0,10,0,0" FontSize="16.5" Padding="8,12,8,5 "
                      Width="380" Height="45" />
             
@@ -36,7 +36,7 @@
                    HorizontalAlignment="Left"/>
 
             <!--TextBoxUsername-->
-            <TextBox MaxLength="30" x:Name="txtUsername" 
+            <TextBox MaxLength="20" x:Name="txtUsername" 
                    Margin="0,10,0,0" FontSize="16.5" Padding="8,12,8,5" 
                    Width="380" Height="45"/>
 
@@ -48,7 +48,7 @@
                    HorizontalAlignment="Left"/>
 
             <!--TextBoxNo.Handphone-->
-            <TextBox MaxLength="14" x:Name="txtNohandphone" 
+            <TextBox MaxLength="15" x:Name="txtNohandphone" 
                      Margin="0,10,0,0" FontSize="16.5" Padding="8,12,8,5"
                          Width="380" 
                          Height="45"/>
@@ -62,7 +62,7 @@
                    HorizontalAlignment="Left"/>
             
             <!--TexBoxPassword-->
-            <PasswordBox MaxLength="16" x:Name="txtPassword" 
+            <PasswordBox MaxLength="20" x:Name="txtPassword" 
                          Margin="0,10,0,0" Padding="8,12,8,5"
                          Width="380" 
                          Height="45"/>
@@ -76,7 +76,7 @@
                    HorizontalAlignment="Left"/>
 
             <!--TexBoxConfirmPassword-->
-            <PasswordBox MaxLength="16" x:Name="txtConfirmPassword" 
+            <PasswordBox MaxLength="20" x:Name="txtConfirmPassword" 
                          Margin="0,10,0,0" Padding="8,12,8,5"
                          Width="380" 
                          Height="45"/>
@@ -89,7 +89,7 @@
                     FontSize="24" 
                     FontFamily="Arial Rounded MT Bold" 
                     Foreground="White" 
-                    Background="Red">
+                    Background="Red" Click="btnRegister_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="25"></Setter>
@@ -101,7 +101,7 @@
                    FontSize="16" 
                    Foreground="#3C45D5" 
                    HorizontalContentAlignment="Center" 
-                   HorizontalAlignment="Center"/> 
+                   HorizontalAlignment="Center" MouseDown="Label_MouseDown"/> 
 
         </StackPanel>
 

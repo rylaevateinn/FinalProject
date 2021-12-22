@@ -33,6 +33,11 @@ namespace FinalProject.view
             pengguna.Login();
         }
 
-        
+        private void lblCreateAccount_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Register register = new Register();
+            register.Show();
+            this.Close();
+        }
     }
 }
